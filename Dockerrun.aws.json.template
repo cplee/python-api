@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:<TAG>",
+    "Name": "<NAME>",
     "Update": "true"
   },
   "Ports": [
