@@ -5,8 +5,8 @@ IMAGE_NAME=324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:$CIRCLE_SHA1
 
 # Push image
 eval `aws ecr get-login`
-docker tag python-api $TAG
-docker push $TAG
+docker tag python-api $IMAGE_NAME
+docker push $IMAGE_NAME
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=casey-labs-bucket
