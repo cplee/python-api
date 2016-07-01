@@ -17,5 +17,5 @@ deployment:
     branch: master
     commands:
       - eval `aws ecr get-login`
-      - docker tag python-api 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:latest
-      - docker push 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:latest
+      - docker tag python-api 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test/python-api:latest
+      - docker push 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test/python-api:latest
