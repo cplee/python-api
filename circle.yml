@@ -19,3 +19,7 @@ deployment:
       - eval `aws ecr get-login`
       - docker tag python-api 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:$CIRCLE_SHA1
       - docker push 324320755747.dkr.ecr.us-west-2.amazonaws.com/casey-test:$CIRCLE_SHA1
+  elasticbeanstalk:
+    branch: master
+    commands:
+      - ./deploy.sh $CIRCLE_SHA1
