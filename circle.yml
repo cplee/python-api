@@ -16,4 +16,4 @@ deployment:
   elasticbeanstalk:
     branch: master
     commands:
-      - ./deploy.sh $CIRCLE_SHA1
+      - sh ./deploy.sh $CIRCLE_SHA1
